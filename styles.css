@@ -37,6 +37,18 @@ img.smile-school-logo {
   font-weight: bold;
 }
 
+.purple-text {
+  color: var(--purple-smile);
+}
+
+#courses .courses,
+#pricing .pricing {
+  color: #c271ff !important;
+  text-decoration: underline !important;
+  text-decoration-color: #ffffff !important;
+  text-decoration-thickness: 3px !important;
+}
+
 .subtitles::after {
   content: "SMILES GRIN LAUGH";
   display: block;
@@ -78,33 +90,83 @@ button.btn {
   font-weight: 900;
 }
 
-img.circle-thumb {
-  width: 9rem;
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #C271FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
 }
 
-.carousel {
-  padding-left: 4rem;
-  height: 15rem;
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-.carousel-control-prev {
-  background-image: url("./images/arrow_white_left.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 2rem;
-  margin: 2rem 1rem;
+.circle-thumbnail {
+  width: 4rem;
+  height: 4rem;
 }
 
-.carousel-control-next {
-  background-image: url("./images/arrow_white_right.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 2rem;
-  margin: 2rem 1rem;
+.circle-thumb {
+  width: 6rem;
 }
 
 img.thumbnail-1 {
   width: 14rem;
+}
+
+.testimonials {
+  background-color: #c271ff;
+}
+
+#testimonial-carousel .carousel-item {
+  width: 100%;
+  height: 300px;
+  background-color: #c271ff;
+}
+
+#testimonial-carousel .carousel-item img {
+  width: 20%;
+  margin-left: 15%;
+}
+
+#testimonial-carousel .carousel-item .testimonial-text {
+  margin-left: 2rem;
+  width: 50%;
+}
+
+.card {
+  border: none !important;
+}
+
+.card.card-body {
+  width: 100%;
+}
+
+.col-md-6.col-lg-3 {
+  margin-right: 5rem !important;
+}
+
+.video {
+  position: relative;
+}
+
+.play-btn {
+  width: 3rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+}
+
+.duration {
+  width: 40%;
+}
+
+.rating {
+  width: 100%;
 }
 
 .video-prev {
@@ -143,6 +205,13 @@ img.smile-logo {
 
 footer {
   position: absolute;
+}
+
+.break-text p {
+  text-overflow: ellipsis;
+}
+.vid-bg-img {
+  width: 100%;
 }
 
 .holberton_school-icon-ic_facebook,
